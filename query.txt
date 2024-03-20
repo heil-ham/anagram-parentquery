@@ -1,0 +1,4 @@
+SELECT p.id, p.name, p2.name as parent_name
+FROM persons p
+LEFT JOIN persons p2 ON p.parent_id = p2.id
+ORDER BY id
